@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+    var username = ViewBag.Username as string;
+}
+
+<h2>Privacy Policy</h2>
+
+@if (!string.IsNullOrEmpty(username))
+{
+    <p>Welcome, @username!</p>
+}
+else
+{
+    <p>You are not logged in.</p>
+}
+
+<a href="/Account/Logout">Logout</a>
+
