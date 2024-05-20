@@ -13,7 +13,7 @@ namespace LDAP_Authentication_V2.Services
             _ldapSettings = ldapSettings.Value;
         }
 
-        public bool Authenticate(string username, string password)
+        public string Authenticate(string username, string password)
         {
             try
             {
@@ -38,17 +38,20 @@ namespace LDAP_Authentication_V2.Services
                         {
                             var userDn = entry.Dn;
                             connection.Bind(userDn, password);
-                            return connection.Bound;
+                            return connection.Bound ? "Success" : "Invalid credentials";
                         }
                     }
-
-                    return false;
+                    else
+                    {
+                        return "User does not exist";
+                    }
                 }
             }
-            catch (LdapException)
+            catch (LdapException e)
             {
-                return false;
+                return e.ToString();
             }
+            return "Error in authentication process";
         }
     }
 }

@@ -25,7 +25,7 @@ namespace LDAP_Authentication_V2.Controllers
             if (ModelState.IsValid)
             {
                 var isAuthenticated = _ldapAuthService.Authenticate(model.Username, model.Password);
-                if (isAuthenticated)
+                if (isAuthenticated.Equals("Success"))
                 {
                     // Authentication successful, set session or cookie and redirect
                     HttpContext.Session.SetString("User", model.Username);
@@ -33,7 +33,7 @@ namespace LDAP_Authentication_V2.Controllers
                 }
 
                 // Authentication failed, show error
-                ModelState.AddModelError("", "Invalid username or password.");
+                ModelState.AddModelError("", isAuthenticated);
             }
 
             return View(model);
