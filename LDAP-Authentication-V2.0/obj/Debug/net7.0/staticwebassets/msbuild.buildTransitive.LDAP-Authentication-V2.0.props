@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\LDAP-Authentication-V2.0.props" />
-</Project>
