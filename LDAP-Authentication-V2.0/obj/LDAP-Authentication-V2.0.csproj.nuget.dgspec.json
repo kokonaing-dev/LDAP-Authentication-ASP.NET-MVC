@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Personal\\Project\\LDAP-Authentication-ASP.NET-MVC\\LDAP-Authentication-V2.0\\LDAP-Authentication-V2.0.csproj": {}
+    "D:\\Personal\\Project\\LDAP-Integration\\LDAP-Authentication-V2.0\\LDAP-Authentication-V2.0.csproj": {}
   },
   "projects": {
-    "D:\\Personal\\Project\\LDAP-Authentication-ASP.NET-MVC\\LDAP-Authentication-V2.0\\LDAP-Authentication-V2.0.csproj": {
+    "D:\\Personal\\Project\\LDAP-Integration\\LDAP-Authentication-V2.0\\LDAP-Authentication-V2.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Personal\\Project\\LDAP-Authentication-ASP.NET-MVC\\LDAP-Authentication-V2.0\\LDAP-Authentication-V2.0.csproj",
+        "projectUniqueName": "D:\\Personal\\Project\\LDAP-Integration\\LDAP-Authentication-V2.0\\LDAP-Authentication-V2.0.csproj",
         "projectName": "LDAP-Authentication-V2.0",
-        "projectPath": "D:\\Personal\\Project\\LDAP-Authentication-ASP.NET-MVC\\LDAP-Authentication-V2.0\\LDAP-Authentication-V2.0.csproj",
+        "projectPath": "D:\\Personal\\Project\\LDAP-Integration\\LDAP-Authentication-V2.0\\LDAP-Authentication-V2.0.csproj",
         "packagesPath": "C:\\Users\\ACE.DESKTOP-VF2JT42\\.nuget\\packages\\",
-        "outputPath": "D:\\Personal\\Project\\LDAP-Authentication-ASP.NET-MVC\\LDAP-Authentication-V2.0\\obj\\",
+        "outputPath": "D:\\Personal\\Project\\LDAP-Integration\\LDAP-Authentication-V2.0\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACE.DESKTOP-VF2JT42\\AppData\\Roaming\\NuGet\\NuGet.Config",
